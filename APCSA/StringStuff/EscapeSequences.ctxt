@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=EscapeSequences
+comment0.text=THE\ DIRECTIONS\ FOR\ THE\ ASSIGNMENT\r\n\ With\ single\ System.out.println\ statements,\ output\ the\ following\:\ \r\n\r\n1.\ \r\nDescartes\ said\:\ \r\n\u201CI\ think,\ therefore\ I\ am\u201D\r\n\r\n2.\r\nThe\ backslash\ (\\)\ is\ a\ typographical\ mark\ (\u201Cglyph\u201D)\ used\ mainly\ in\ computing.\r\n\r\n3.\ \r\nCreate\ your\ own\ that\ is\ over-the-top-ridiculous-silly,\ but\ highlights\ the\ idea.\ \r\n\r\nWhen\ done\:\ Put\ a\ multi-line\ comment\ into\ your\ program\ explaining\ the\ different\ useful\ escape\ sequences\ so\ you\ can\ look\ back\ at\ this\ file\ in\ the\ future.\r\n
+comment1.params=
+comment1.target=void\ main()
+numComments=2
