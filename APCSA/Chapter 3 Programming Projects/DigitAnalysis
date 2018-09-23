@@ -1,0 +1,5 @@
+/*
+Program asks user to enter an integer between 1 million and 1 billion.
+	If input not valid, re-prompts. 
+	Program then prints the number of odd and even digits. 
+*/
