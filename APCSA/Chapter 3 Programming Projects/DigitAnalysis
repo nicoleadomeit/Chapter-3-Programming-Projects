@@ -1,5 +1,12 @@
-/*
-Program asks user to enter an integer between 1 million and 1 billion.
+/*Program asks user to enter an integer between 1 million and 1 billion.
 	If input not valid, re-prompts. 
-	Program then prints the number of odd and even digits. 
-*/
+	Program then prints the number of odd and even digits. */
+	import java.util.Scanner;
+public class DigitAnalysis {
+    public static void main(){
+        Scanner scan = new Scanner(System.in);
+    System.out.println ("This is a program that will print the number of odd or even digits in an integer between 1 million and 1 billion.");
+    int x = scan.nextInt();
+    
+}
+}
