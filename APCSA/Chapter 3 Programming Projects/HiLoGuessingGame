@@ -12,7 +12,7 @@ public class HiLowGuessingGame {
         Scanner scan = new Scanner (System.in);
         System.out.println ("Try to guess a number between 1 and 100. Type that number in.");
         int a = scan.nextInt();
-        for (int i = 0; i <= b; i++) {
+       // for (int i = 0; i <= b; i++) {
         if ((a <1 || a >100)) {
             System.out.println ("This number is not within the range. Guess again.");
         }
@@ -24,4 +24,4 @@ public class HiLowGuessingGame {
         }
     }
 }
-}
+
