@@ -6,12 +6,16 @@ public class DigitAnalysis {
     public static void main(){
         Scanner scan = new Scanner(System.in);
         System.out.println ("This is a program that will print the number of odd or even digits in an integer between 1 million and 1 billion. Please enter a number between 1 million and 1 billion");
+        int odd = 0;
+        int even = 0;
         int x = scan.nextInt();
-        if ((x<1000000) && (x>1000000000)) {
-            System.out.println ("Please enter another number between 1 million and 1 billion");
+        if ((x<1000000) || (x>1000000000)) {
+            System.out.println ("Sorry, this number does not meet the requirements. Please enter a number between 1 million and 1 billion");
             int y = scan.nextInt();
         }
-        
+        String numberString = Integer.toString(x); 
+        for (int i = 0; i < numberString.length(); i++) {
+        }
     }
 }
 
