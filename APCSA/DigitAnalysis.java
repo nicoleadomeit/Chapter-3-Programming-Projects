@@ -9,17 +9,19 @@ public class DigitAnalysis {
         int odd = 0;
         int even = 0;
         int x = scan.nextInt();
-        if ((x<1000000) || (x>1000000000)) {
+        if (x > 1000000000 || x < 1000000) {
             System.out.println ("Sorry, this number does not meet the requirements. Please enter a number between 1 million and 1 billion");
             int y = scan.nextInt();
         }
-        String numberString = Integer.toString(x); 
-        for (int i = 0; i < numberString.length(); i++) {
+        String s = Integer.toString(x); 
+        for (int i = 0; i < s.length(); i++) {
+            char a = s.charAt(i);
+            if ((int) a % 2 == 0) {
+                even++;
+            } else if ((int) a % 2 == 1) {
+                odd++;
+            }
         }
+        System.out.println("There are " + even + " even numbers and there are " + odd+ " odd numbers");
     }
 }
-
-/* Scan in an integer, repromt if not between 1 mil and 1 bil
- * Rescan int if necessary and isolate the last digit using module 10
- * Divide number by 10 to 10 to get the rest of the number
- * repeat process using for loop until last digit is divided by 10 (0)*/
