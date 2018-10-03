@@ -5,7 +5,7 @@ isn’t bigger then that it should re-prompt the user. A year is a leap year if 
  */
 import java.util.Scanner;
 
-public class FixingForNicole {
+public class LeapYear {
     public static void main(String[] arg) {
         boolean Nicole = true;
         Scanner scan = new Scanner(System.in);
@@ -14,12 +14,12 @@ public class FixingForNicole {
             int x = scan.nextInt();
             if ((x > 1582) && (x % 4 == 0) && (!(x % 100 == 0)) && (!(x % 400 == 0))) {
                 System.out.println("This year is a leap year");
-            } else if ((x > 1582) && (x % 4 == 0) && (x % 100 == 0) && (!(x % 400 == 0))) {
-                System.out.println("This year is not a leap year");
+            } else if ((x > 1582) && (x % 4 == 0) && (x % 100 == 0) && ((x % 400 == 0))) {
+                System.out.println("This year is a leap year");
             } else if (x <= 1582) {
                 System.out.println("This is before Leap Year was recognized");
             } else {
-                System.out.println("This is not a leap year.");
+                System.out.println("This year is not a leap year.");
             }
             if (x == 0) {
                 Nicole = false;
@@ -27,7 +27,6 @@ public class FixingForNicole {
         }
     }
 }
-
 
 
 
