@@ -47,6 +47,34 @@ public class RockPaperScissors {
                 f = false;
                 System.out.println ("You have " +wins+ " wins, you have " +loses+ " loses, and you have tied " +ties+ " games.");      
             }
+            if (rpc == computerChoice) {
+                System.out.println ("It is a draw!");
+                ties = ties + 1;
+            }
+            if (((rpc.equals(r) && computerChoice.equals(p)))) {
+                System.out.println ("You lost!");
+                loses = loses + 1;
+            }
+            if (((rpc.equals(r) && computerChoice.equals(s)))) {
+                System.out.println ("You won!");
+                wins = wins + 1;
+            }
+            if (((rpc.equals(p) && computerChoice.equals(s)))) {
+                System.out.println ("You lost!");
+                loses = loses + 1;  
+            }
+            if (((rpc.equals(p) && computerChoice.equals(r)))) {
+                System.out.println ("You won!");
+                wins = wins + 1;
+            }
+            if (((rpc.equals(s) && computerChoice.equals(p)))) {
+                System.out.println ("You won!");
+                wins = wins + 1;
+            }
+            if (((rpc.equals(s) && computerChoice.equals(r)))) {
+                System.out.println ("You lost!");
+                loses = loses + 1;  
+            }
         }
     }
 }
