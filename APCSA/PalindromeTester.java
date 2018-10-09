@@ -7,10 +7,10 @@ public class PalindromeTester {
         Scanner scan = new Scanner (System.in);
         System.out.println ("This is a palindrome tester. Enter a potential palindrome");
         String word = scan.nextLine();
-        String convert = word.toLowerCase(); //ignore caps
-        String reverse = new StringBuffer(word).reverse().toString(); //reverse string
-        word = word.replaceAll(" ", ""); //ignores and space
+        word = word.toLowerCase(); //ignore caps
+        word = word.replaceAll("\\s",""); //ignores spaces
         word = word.replaceAll("!", ""); //ignore exclamation point
+        String reverse = new StringBuffer(word).reverse().toString(); //reverse string
         if (reverse.equals(word)) {
             System.out.println ("This is a palindrome");
         }
