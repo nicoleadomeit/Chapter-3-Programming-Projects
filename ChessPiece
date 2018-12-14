@@ -1,0 +1,28 @@
+public class ChessPiece implements Comparable<ChessPiece>{
+    boolean canMove;
+    int player;
+    String[] Piece = {"king" , "queen" , "rook" , "bishop" , "knight", "pawn"};
+
+    public ChessPiece(String piece, int player){
+        this.player = player;
+    }
+
+    public String getPiece(){
+        if 
+    }
+
+    public int getPlayer(){
+        return player;
+    }
+
+    /* Ordering of pieces: 
+     *    Pawn < Knight = Bishop < Rook < Queen < King 
+     */
+    public int compareTo(ChessPiece otherPiece){
+        /* Returns a NEG, ZERO, or POS as required by Comparable */              
+    }
+
+    public boolean canMove() {
+        return canMove;
+    }
+}
