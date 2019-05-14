@@ -1,0 +1,126 @@
+import java.util.Arrays;
+import java.util.Scanner;
+public class Hotel {
+    private int numGuests = 0;
+    private int numDays = 0;
+    private int numRooms = 0;
+    private String roomType;
+    private int paymentType =0;
+    private double roomCost = 0.0;
+    private double totalCost = 0.0;
+    boolean b = true;
+    public String roomTypeSelection(String roomType) {
+        System.out.println ("**Welcome to Hall Suites**");
+        System.out.println ("Please select your preffered type of room");
+        System.out.println ("Room Types: ");
+        System.out.println ("Single ($100.00 per night, Double ($150.00 per night, Penthouse ($250.00 per night despite the number of guests. Enjoy!");
+        System.out.println ("Please enter a room type, or type exit to cancel your room selection.");
+        Scanner scan = new Scanner(System.in);
+        String roomSelection = scan.nextLine();
+        while (b) {
+            if (roomSelection.equals("single")) {
+                totalCost += 100.0;
+                System.out.println ("You have selected a single room for the reasonable price of $100.00 per night.");
+            }
+            if (roomSelection.equals("double")) {
+                totalCost += 150.0;
+                System.out.println ("You have selected a double room for the generous price of $150.00 per night.");
+            }
+            if (roomSelection.equals("penthouse")) {
+                totalCost += 250.0;
+                System.out.println ("You have selected our penthouse suit for the luxurious price of $250.00 per night.");
+            }
+            if (roomSelection.equals("exit")) {
+                b = false;
+            }
+        }
+        return roomSelection;
+    }
+
+    public int numRoomsSelection (int numRooms, String roomSelection) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println ("Please enter the number of days you wish to stay at Hall Suites. Our establishment allows up to a six night stay. Please enter numerical values for our convenience. Thank you for your coperation!");
+        int numRoomsSelection = scan.nextInt();
+        while (b) {
+            if ((numRoomsSelection != 1) ||(numRoomsSelection != 2) || (numRoomsSelection != 3) || (numRoomsSelection != 4) || (numRoomsSelection != 5) || (numRoomsSelection != 6))
+                b = false;
+            System.out.println ("Please enter a valid number of nights you wish to stay with us.");
+        }
+        if (numRoomsSelection == 1 && roomSelection.equals("single")){
+            totalCost += 100;
+            roomCost += 100;
+        }
+        if (numRoomsSelection == 1 && roomSelection.equals("double")){
+            totalCost += 150;
+            roomCost += 150;
+        }
+        if (numRoomsSelection == 1 && roomSelection.equals("penthouse")){
+            totalCost += 250;
+            roomCost += 250;
+        }
+        if (numRoomsSelection == 2 && roomSelection.equals("single")){
+            totalCost += 200;
+            roomCost += 200;
+        }
+        if (numRoomsSelection == 2 && roomSelection.equals("double")){
+            totalCost += 300;
+            roomCost += 300;
+        }
+        if (numRoomsSelection == 2 && roomSelection.equals("penthouse")){
+            totalCost += 500;
+            roomCost += 500;
+        }
+        if (numRoomsSelection == 3 && roomSelection.equals("single")){
+            totalCost += 300;
+            roomCost += 300;
+        }
+        if (numRoomsSelection == 3 && roomSelection.equals("double")){
+            totalCost += 450;
+            roomCost += 450;
+        }
+        if (numRoomsSelection == 3 && roomSelection.equals("penthouse")){
+            totalCost += 750;
+            roomCost += 750;
+        }
+        if (numRoomsSelection == 4 && roomSelection.equals("single")){
+            totalCost += 400;
+            roomCost += 400;
+        }
+        if (numRoomsSelection == 4 && roomSelection.equals("double")){
+            totalCost += 600;
+            roomCost += 600;
+        }
+        if (numRoomsSelection == 4 && roomSelection.equals("penthouse")){
+            totalCost += 1000;
+            roomCost += 1000;
+        }
+        if (numRoomsSelection == 5 && roomSelection.equals("single")){
+            totalCost += 500;
+            roomCost += 500;
+        }
+        if (numRoomsSelection == 5 && roomSelection.equals("double")){
+            totalCost += 750;
+            roomCost += 750;
+        }
+        if (numRoomsSelection == 5 && roomSelection.equals("penthouse")){
+            totalCost += 1250;
+            roomCost += 1250;
+        }
+        if (numRoomsSelection == 6 && roomSelection.equals("single")){
+            totalCost += 600;
+            roomCost += 600;
+        }
+        if (numRoomsSelection == 6 && roomSelection.equals("double")){
+            totalCost += 900;
+            roomCost += 900;
+        }
+        if (numRoomsSelection == 6 && roomSelection.equals("penthouse")){
+            totalCost += 1500;
+            roomCost += 1500;
+        }
+        System.out.println("The cost for your room(s) for the duration of your stay is " +roomCost);
+        return numRooms;
+    }
+}
+
+
